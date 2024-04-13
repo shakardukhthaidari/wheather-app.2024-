@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Hahmlet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
+  <title>Weather-App</title>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <form id="search-form">
+        <input type="search" autocomplete="off" autofocus id="search" placeholder="Enter city..." required>
+        <input type="submit" id="submit-btn" value="Search">
+      </form>
+    </header>
+
+    <main>
+      <div class="first-div">
+        <div id="city-name-div">
+          <h1 id="h1">Lon angeles</h1>
+        </div>
+        <div class="weather-div">
+          <span id="icon-img"></span>
+          <span id="weather">10</span>
+          <span id="c-sign">℃</span>
+
+        </div>
+      </div>
+      <div id="weather-description">
+        <span id="day"></span>
+        <span id="date"> </span>
+        <span id="rain"></span><br>
+        <span id="humidity"></span>
+        <span id="wind"></span>
+      </div>
+      <div class="mid-img">
+        <img
+          src="jjj.jpg" alt="decorated picture" class="middle-img" />
+      </div>
+
+      <!--Next six days forcast should be displayed here along with icon-->
+      <h2>6-days forcast</h2>
+      <div class="five-days-weather" id="forecast">
+        
+      </div>
+    </main>
+    <footer>
+      This project was coded by
+      <a href="">shakardukht Haidari </a> and it is open source on
+      <a href="">Github </a> hosted on
+      <a href="">Netlify</a>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
